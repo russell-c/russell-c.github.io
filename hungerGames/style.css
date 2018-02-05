@@ -1,0 +1,181 @@
+html, body{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url("chips.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 21px;
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.splashscreen{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 25%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 1);
+  text-align: center;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.splashscreen a:link, .splashscreen a:visited{
+  color: yellow;
+  text-decoration: none;
+}
+
+.splashscreen a:hover{
+  color: #FA4B14;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.splashscreen h1{
+  margin-bottom: 30px;
+}
+
+.splashscreen h2{
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.main-container{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 67px;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+  color: yellow;
+  padding-top: 10px;
+}
+
+.header-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+td.header-title{
+  width: 800px;
+  font-size: 3em;
+  vertical-align: middle;
+}
+
+td.header-links{
+  width: 246px;
+  text-align: right;
+  word-spacing: 10px;
+}
+
+a.header-links:link, a.header-links:visited{
+  color: yellow;
+  text-decoration: none;
+}
+
+a.header-links:hover{
+  color: #FA4B14;
+  text-decoration: underline;
+  text-decoration-color: #FA4B14;
+}
+
+.section-title{
+  width: 80%;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.video-section, .about-section{
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)), url("chips.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+}
+
+.video-container{
+  width: 80%;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.reviews-section, .about-section, .video-section{
+  padding-top: 20px;
+  padding-bottom: 140px;
+}
+
+.reviews-section{
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.reviews, .about{
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+.reviews h1{
+  color: yellow;
+}
+
+.reviews p{
+  color: white;
+  background: linear-gradient(rgba(250, 65, 20, 0.88), rgba(255, 30, 5, 0.88));
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.about table{
+  border-spacing: 0 15px;
+}
+
+.about table tr td img{
+  display: block;
+  width: 80px;
+  height: 74px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.about p{
+  margin: 0;
+}
+
+td.cast-text{
+  width: 1072px;
+  height: 74px;
+  padding: 0;
+  padding-left: 5px;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+td.cast-img-col{
+  width: 80px;
+  height: 74px;
+}
