@@ -14,3 +14,19 @@ html, body{
 h1{
   font-style: italic;
 }
+
+ul{
+  font-size: 18px;
+  list-style-type: square;
+}
+
+li a:link, li a:visited{
+  color: teal;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: #FFDAB9;
+  text-decoration: none;
+  text-decoration-color: #FFDAB9;
+}
