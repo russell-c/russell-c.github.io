@@ -4,19 +4,19 @@ var count = 1;
 var max = 7;
 $("#gallery-img").attr("src", "images/pic"+count+".png");
 
-$(".header-links a").on("click", function(){
-  var offset = -67; //Offset of 20px
+$(".header-links a").click(function(){
+  var offset = -67;
   var section = $(this).attr("href");
   $('html, body').animate({
         scrollTop: $(section).offset().top + offset
   }, 1000);
 });
 
-$("#enterBtn").on("click", function(){
+$("#enterBtn").click(function(){
   $(this).parent().fadeOut(500);
   $(".header").show(0);
   $(".main-container").show(0);
-})
+});
 
 $("#left-arrow").hover(function(){
   $(this).css("color", "yellow");
