@@ -73,13 +73,13 @@ h1{
 }
 
 td.header-title{
-  width: 800px;
+  width: 700px;
   font-size: 3em;
   vertical-align: middle;
 }
 
 td.header-links{
-  width: 246px;
+  width: 346px;
   text-align: right;
   word-spacing: 10px;
 }
@@ -120,24 +120,24 @@ a.header-links:hover{
   margin: 0 auto;
 }
 
-.reviews-section, .about-section, .video-section{
+.reviews-section, .about-section, .video-section, .gallery-section{
   padding-top: 20px;
   padding-bottom: 140px;
 }
 
-.reviews-section{
+.reviews-section, .gallery-section{
   width: 100%;
   background-color: black;
   color: white;
 }
 
-.reviews, .about{
+.reviews, .about, .gallery{
   width: 80%;
   margin: 0 auto;
   color: white;
 }
 
-.reviews h1{
+.reviews h1, .gallery h1{
   color: yellow;
 }
 
@@ -178,4 +178,24 @@ td.cast-text{
 td.cast-img-col{
   width: 80px;
   height: 74px;
+}
+
+.gallery table{
+  margin-top: 25px;
+  width: 100%;
+}
+
+#gallery-img{
+  display: block;
+  margin: 0 auto;
+  height: 360px;
+  width: 480px;
+  border-radius: 8px;
+}
+
+#left-arrow, #right-arrow{
+  text-align: center;
+  font-size: 48px;
+  width: 600px;
+  color: rgba(250, 65, 20, 0.5);
 }
