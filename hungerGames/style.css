@@ -188,14 +188,14 @@ td.cast-img-col{
 #gallery-img{
   display: block;
   margin: 0 auto;
-  height: 360px;
-  width: 480px;
+  height: 400px;
+  width: 720px;
   border-radius: 8px;
 }
 
 #left-arrow, #right-arrow{
   text-align: center;
   font-size: 48px;
-  width: 600px;
+  width: 500px;
   color: rgba(250, 65, 20, 0.5);
 }

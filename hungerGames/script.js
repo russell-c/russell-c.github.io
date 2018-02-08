@@ -1,8 +1,8 @@
 $(".header").hide(0);
 $(".main-container").hide(0);
-var pics = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg", "https://news.nationalgeographic.com/content/dam/news/photos/000/755/75552.ngsversion.1422285553360.adapt.1900.1.jpg", "https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg"];
-var count = 0;
-$("#gallery-img").attr("src", pics[count]);
+var count = 1;
+var max = 7;
+$("#gallery-img").attr("src", "images/pic"+count+".png");
 
 $(".header-links a").on("click", function(){
   var offset = -67; //Offset of 20px
@@ -32,16 +32,16 @@ $("#right-arrow").hover(function(){
 
 $("#left-arrow").click(function(){
   count = count-1;
-  if(count === -1){
-    count = pics.length-1;
+  if(count < 1){
+    count = max;
   }
-  $("#gallery-img").attr("src", pics[count]);
+  $("#gallery-img").attr("src", "images/pic"+count+".png");
 });
 
 $("#right-arrow").click(function(){
   count = count+1;
-  if(count === pics.length){
-    count = 0;
+  if(count > max){
+    count = 1;
   }
-  $("#gallery-img").attr("src", pics[count]);
+  $("#gallery-img").attr("src", "images/pic"+count+".png");
 });
