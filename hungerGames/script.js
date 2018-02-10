@@ -13,6 +13,7 @@ $(".header-links a").click(function(){
 });
 
 $("#enterBtn").click(function(){
+  $("#crunch")[0].play();
   $(this).parent().fadeOut(500);
   $(".header").show(0);
   $(".main-container").show(0);
