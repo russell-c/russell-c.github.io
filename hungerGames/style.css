@@ -87,12 +87,12 @@ td.header-links{
   word-spacing: 10px;
 }
 
-a.header-links:link, a.header-links:visited{
+.header-links a:link, .header-links a:visited{
   color: yellow;
   text-decoration: none;
 }
 
-a.header-links:hover{
+.header-links a:hover{
   color: #FA4B14;
   text-decoration: underline;
   text-decoration-color: #FA4B14;
