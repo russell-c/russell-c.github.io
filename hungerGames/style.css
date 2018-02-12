@@ -193,6 +193,7 @@ td.cast-img-col{
   margin: 0 auto;
   height: 400px;
   width: 720px;
+  background: url("images/chips.jpg") no-repeat;
   border-radius: 8px;
 }
 
