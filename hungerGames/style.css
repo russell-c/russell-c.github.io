@@ -4,7 +4,7 @@ html, body{
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url("chips.jpg");
+  background-image: url("images/chips.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -107,7 +107,7 @@ td.header-links{
 
 .video-section, .about-section{
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)), url("chips.jpg");
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)), url("images/chips.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
