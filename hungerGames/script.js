@@ -1,6 +1,3 @@
-// $(".header").hide(0); //hides the header bar upon page load so splashscreen is only div loaded
-// $(".main-container").hide(0); //hides the main div upon page load so splashscreen is only div loaded
-
 var count = 1; //initialising counter for picture slider
 var max = 7; //initialising max value for picture slider
 
