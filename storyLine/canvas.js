@@ -78,6 +78,9 @@ var typer = new TypeIt('#sentence',{
   lifeLike: true
 });
 
+var autoplay = true;
+var prev;
+
 function preload() {
 
   for (var i = 0; i < 19; i++) {
@@ -141,6 +144,18 @@ function draw() {
     played = true;
   }
 
+  if(autoplay === true && pointsArr[active].sound.playing() === false && active < pointsArr.length-1){
+    prev = pointsArr[active];
+    active++;
+
+    typer.empty().type(sentences[active]);
+    $("#source").html(sentences[active][1]);
+
+    lines.push([prev, pointsArr[active]]);
+
+    played = false;
+  }
+
   count++;
   if(count>30){
     count = 0;
@@ -152,7 +167,7 @@ function mousePressed(){
   var found = false;
   for(var i = 0; i<pointsArr.length; i++){
     d = int(dist(mouseX, mouseY, pointsArr[i].xVal, pointsArr[i].yVal));
-    if(d < 10){
+    if(autoplay === false && d < 10){
       found = true;
 
       var prev = pointsArr[active];
@@ -168,9 +183,9 @@ function mousePressed(){
       break;
     }
   }
-  if (found === false) {
-    if(active<18){
-      var prev = pointsArr[active];
+  if (autoplay === false && found === false) {
+    if(active<pointsArr.length - 1){
+      prev = pointsArr[active];
       pointsArr[active].sound.stop();
       active++;
 
@@ -197,8 +212,8 @@ function keyPressed(){
   }
 
   if(keyCode === RIGHT_ARROW){
-    if(active<18){
-      var prev = pointsArr[active];
+    if(autoplay === false && active<pointsArr.length - 1){
+      prev = pointsArr[active];
       pointsArr[active].sound.stop();
       active++;
 
@@ -212,7 +227,7 @@ function keyPressed(){
   }
 
   if(keyCode === LEFT_ARROW){
-    if(active>0){
+    if(autoplay === false && active>0){
       pointsArr[active].sound.stop();
       active--;
 
@@ -220,6 +235,18 @@ function keyPressed(){
       $("#source").html(sentences[active][1]);
 
       played = false;
+    }
+  }
+
+  if(keyCode === DOWN_ARROW){
+    if (autoplay === true) {
+      autoplay = false;
+      $(".autoplay-div").html("autoplay: off");
+      $(".instructions-container").html('<p>press &nbsp; <i class="fas fa-arrow-up"></i> &nbsp; to start over<br>use &nbsp;<i class="fas fa-arrow-left"></i> &nbsp; and &nbsp; <i class="fas fa-arrow-right"></i> &nbsp;or &nbsp;<i class="far fa-hand-pointer"></i> &nbsp;anywhere to navigate the story<br>press &nbsp; <i class="fas fa-arrow-down"></i> &nbsp; to toggle autoplay<br><i class="far fa-hand-pointer"></i> &nbsp;on a point to go to that point in story</p>');
+    } else{
+      autoplay = true;
+      $(".autoplay-div").html("autoplay: on");
+      $(".instructions-container").html('<p>press &nbsp; <i class="fas fa-arrow-up"></i> &nbsp; to start over<br>press &nbsp; <i class="fas fa-arrow-down"></i> &nbsp; to toggle autoplay</p>')
     }
   }
 }
