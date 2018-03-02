@@ -12,7 +12,6 @@
 }
 html, body{
   font-family: "Open Sans Condensed", sans-serif;
-  font-style: italic;
   text-align: center;
   margin: 0;
   background-color: white;
@@ -102,8 +101,7 @@ li{
 #source{
   display: table-row;
   vertical-align: middle;
-  color: rgba(255, 0, 90, 0.9);
-  font-style: normal;
+  color: rgba(255, 0, 90, 0.8);
   font-size: 17px;
   height: 30px;
   text-align: right;
