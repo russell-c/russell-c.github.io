@@ -4,6 +4,7 @@ $(".contributor-container").hide();
 $(".instructions-container").hide();
 $(".img-container").hide();
 $(".sentence-container").hide();
+$(".analyser-container").hide();
 
 class Point {
   constructor(xVal, yVal, sound) {
@@ -80,6 +81,7 @@ var typer = new TypeIt('#sentence',{
 
 var autoplay = true;
 var prev;
+
 var analyserCanvas;
 var ctx;
 var analyser;
@@ -105,6 +107,7 @@ function preload() {
   dataArray = new Uint8Array(bufferLength);
 
   ctx.clearRect(0, 0, 800, 98);
+  active = 0;
 }
 
 
@@ -115,6 +118,7 @@ function setup() {
   $(".instructions-container").show();
   $(".img-container").show();
   $(".sentence-container").show();
+  $(".analyser-container").show();
 
   canvas = createCanvas(800, 354);
   canvas.parent('canvas');
@@ -127,6 +131,7 @@ function setup() {
 
   typer.type(sentences[0][0]);
   $("#source").html(sentences[0][1]);
+  active = 0;
 }
 
 function draw() {
