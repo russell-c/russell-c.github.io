@@ -64,7 +64,7 @@ var sentences = [
   ["\"I took out my sword and swung it across the tides as a turtle approached me from the reef nearby and asked me if she could join the war.\"","Angela - Baraha - Feb 28, 2018 6:05pm"],
   ["\"So when the turtle came to me to ask if she could join the war, I asked her to bring three pieces of coral from the reef nearby.\"","Jean - Library Staircase - Feb 28, 2018 6:11pm"],
   ["\"As soon as the turtle walked away, the shark came from behind and ate me.\"","Hayat - Library Cafe - Feb 28, 2018 6:14pm"],
-  ["\"So here I am in the belly of the shark, fighting the hunger pangs that come from within. On the inside of his stomach I am scratching his underbelly, trying to get him to throw me out and hopefully get me back into the sea where I can finish the fight. Now the time has arrived and I am ready to be dejected from the shark\'s belly.\"","Mr. T - A2C Lobby - Feb 28, 2018 6:21pm"],
+  ["\"So here I am in the belly of the shark, fighting the hunger pangs that come from within. On the inside of his stomach I am scratching his underbelly, trying to get him to throw me up and hopefully get me back into the sea where I can finish the fight. Now the time has arrived and I am ready to be dejected from the shark\'s belly.\"","Mr. T - A2C Lobby - Feb 28, 2018 6:21pm"],
   ["\"The sky roared and lightning flashed across the sea. I rose from the shark\'s belly rejuvenated as a man, once more willing to start the war.\"","Juju - A2C Lobby - Feb 28, 2018 6:24pm"],
   ["\"There were too many lives involved and I felt responsible for that.\"","Mahrukh - Outside A5A - Feb 28, 2018 6:30pm"],
   ["\"But then again I had never been responsible for anyone except myself.\"","Archita - Outside A5A - Feb 28, 2018 6:34pm"],
