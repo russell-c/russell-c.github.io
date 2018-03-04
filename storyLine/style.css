@@ -103,7 +103,7 @@ li{
 #source{
   display: table-row;
   vertical-align: middle;
-  color: rgba(255, 0, 90, 0.8);
+  color: rgba(255, 0, 90, 0.5);
   font-style: normal;
   font-size: 17px;
   height: 30px;
