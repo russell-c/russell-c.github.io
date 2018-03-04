@@ -79,7 +79,7 @@ var typer = new TypeIt('#sentence',{
   lifeLike: true
 });
 
-var autoplay = true;
+var autoplay = false;
 var prev;
 
 var analyserCanvas;
@@ -132,6 +132,14 @@ function setup() {
   typer.type(sentences[0][0]);
   $("#source").html(sentences[0][1]);
   active = 0;
+
+  if (autoplay === false) {
+    $(".autoplay-div").html("autoplay: off");
+    $(".instructions-container").html('<p>press &nbsp; <i class="fas fa-arrow-up"></i> &nbsp; to start over<br>use &nbsp;<i class="fas fa-arrow-left"></i> &nbsp; and &nbsp; <i class="fas fa-arrow-right"></i> &nbsp;or &nbsp;<i class="far fa-hand-pointer"></i> &nbsp;anywhere to navigate the story<br>press &nbsp; <i class="fas fa-arrow-down"></i> &nbsp; to toggle autoplay<br><i class="far fa-hand-pointer"></i> &nbsp;on a point to go to that point in story</p>');
+  } else{
+    $(".autoplay-div").html("autoplay: on");
+    $(".instructions-container").html('<p>press &nbsp; <i class="fas fa-arrow-up"></i> &nbsp; to start over<br>press &nbsp; <i class="fas fa-arrow-down"></i> &nbsp; to toggle autoplay</p>')
+  }
 }
 
 function draw() {
