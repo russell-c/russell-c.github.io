@@ -12,6 +12,7 @@
 }
 html, body{
   font-family: "Open Sans Condensed", sans-serif;
+  font-style: italic;
   text-align: center;
   margin: 0;
   background-color: white;
@@ -96,12 +97,14 @@ li{
   padding-right: 5px;
   background-color: rgba(0, 0, 0, 0.58);
   text-align: left;
+  z-index: 2
 }
 
 #source{
   display: table-row;
   vertical-align: middle;
-  color: rgba(255, 0, 90, 0.8);
+  color: rgba(255, 0, 90, 0.9);
+  font-style: normal;
   font-size: 17px;
   height: 30px;
   text-align: right;
@@ -117,4 +120,11 @@ li{
   position: absolute;
   top: 10px;
   left: 60px;
+}
+
+.analyser-container{
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+  z-index: 1
 }

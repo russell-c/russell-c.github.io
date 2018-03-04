@@ -80,6 +80,11 @@ var typer = new TypeIt('#sentence',{
 
 var autoplay = true;
 var prev;
+var analyserCanvas;
+var ctx;
+var analyser;
+var bufferLength;
+var dataArray;
 
 function preload() {
 
@@ -90,6 +95,16 @@ function preload() {
   }
 
   campusMap = loadImage('assets/map2.png');
+  analyserCanvas = document.getElementById('analyser');
+  ctx = analyserCanvas.getContext('2d');
+  analyser = Howler.ctx.createAnalyser();
+  Howler.masterGain.connect(analyser);
+  analyser.connect(Howler.ctx.destination);
+  analyser.fftSize = 2048;
+  bufferLength = analyser.frequencyBinCount;
+  dataArray = new Uint8Array(bufferLength);
+
+  ctx.clearRect(0, 0, 800, 98);
 }
 
 
@@ -250,3 +265,32 @@ function keyPressed(){
     }
   }
 }
+
+function analyse() {
+  drawVisual = requestAnimationFrame(analyse);
+  analyser.getByteTimeDomainData(dataArray);
+  ctx.fillStyle = 'rgb(0, 0, 0)';
+  ctx.fillRect(0, 0, 800, 98);
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = 'rgb(255, 0, 90)';
+  ctx.beginPath();
+  var sliceWidth = 800 * 1.0 / bufferLength;
+  var x = 0;
+
+  for(var i = 0; i < bufferLength; i++) {
+    var v = dataArray[i] / 128.0;
+    var y = v * 98/2;
+
+    if(i === 0) {
+      ctx.moveTo(x, y);
+    } else {
+      ctx.lineTo(x, y);
+    }
+
+    x += sliceWidth;
+  }
+
+  ctx.stroke();
+};
+
+analyse();
