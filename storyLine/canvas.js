@@ -68,7 +68,7 @@ var sentences = [
   ["\"The sky roared and lightning flashed across the sea. I rose from the shark\'s belly rejuvenated as a man, once more willing to start the war.\"","Juju - A2C Lobby - Feb 28, 2018 6:24pm"],
   ["\"There were too many lives involved and I felt responsible for that.\"","Mahrukh - Outside A5A - Feb 28, 2018 6:30pm"],
   ["\"But then again I had never been responsible for anyone except myself.\"","Archita - Outside A5A - Feb 28, 2018 6:34pm"],
-  ["\"In my distress, I decided to swim through the the blood stained ocean to the shore.\"","Anthony - Outside A6C - Feb 28, 2018 6:39pm"],
+  ["\"In my distress, I decided to swim through the the blood stained ocean to the shore.\"","Antony - Outside A6C - Feb 28, 2018 6:39pm"],
   ["\"Upon arriving back on shore, I looked out at the ocean of dead carcasses and was thankful that I was still alive.\"","Leslie - Outside A6C - Feb 28, 2018 6:41pm"]
 ];
 
