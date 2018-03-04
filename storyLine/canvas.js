@@ -79,7 +79,7 @@ var typer = new TypeIt('#sentence',{
   lifeLike: true
 });
 
-var autoplay = true;
+var autoplay = false;
 var prev;
 
 var analyserCanvas;
