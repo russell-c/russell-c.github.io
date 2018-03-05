@@ -7,7 +7,7 @@ var sfx = new Howl({
 })
 
 var typer = new TypeIt('#sentence', {
-  strings: ["What happens when a group of people from a university that has students from 115+", "nationalities come together to write a story?", "Come hear it from the students themselves."],
+  strings: ["What happens when a group of people from a university that has students from 115+", "nationalities come together to write a story?", "Let's hear it from the students themselves."],
   speed: 15,
   autoStart: false,
   html: true,
