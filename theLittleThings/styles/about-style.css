@@ -1,0 +1,66 @@
+body{
+  font-family: 'Homemade Apple', cursive;
+  background-color: white;
+}
+
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100vh;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 0 0 0;
+  background-color: #512581;
+  color: white;
+  z-index: 2;
+}
+
+.header-back{
+  display: flex;
+  flex-basis: 20%;
+  justify-content: center;
+}
+
+.backBtn{
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+}
+
+.header-title{
+  display: flex;
+  flex-basis: 60%;
+  justify-content: center;
+}
+
+.content-container{
+  margin: 0 auto;
+  margin-top: 95px;
+  width: 60%;
+  min-height: 77vh;
+  padding: 10px;
+}
+
+.content-title{
+  font-size: 30px;
+  text-align: center;
+}
+
+.content-body{
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+}

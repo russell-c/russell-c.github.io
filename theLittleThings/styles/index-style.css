@@ -1,0 +1,126 @@
+body{
+  font-family: 'Homemade Apple', cursive;
+  background-color: white;
+}
+
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100vh;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 0 0 0;
+  background-color: #512581;
+  color: white;
+  z-index: 2;
+}
+
+.homeBtn, .infoBtn, .aboutBtn{
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.header-title{
+  display: flex;
+  justify-content: center;
+  flex-basis: 60%;
+}
+
+.header-info, .header-about{
+  display: flex;
+  justify-content: center;
+  flex-basis: 10%;
+}
+
+.header-home{
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+}
+
+a:link, a:visited, a:hover{
+  color: white
+}
+
+.comic-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 95px;
+}
+
+.panel{
+  margin: 0;
+}
+
+.info-panel{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 95px;
+  right: 20px;
+  width: 210px;
+  height: 150px;
+  color: black;
+  border: 2px solid #512581;
+  font-family: 'Indie Flower', cursive;
+  background-color: white;
+}
+
+.next-panel{
+  position: fixed;
+  right: -20px;
+  bottom: -50px;
+  width: 200px;
+  height: 140px;
+  color: #512581;
+}
+
+.nextBtn{
+  height: 54px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nextTxt{
+  display: none;
+  text-align: center;
+}
+
+.nextBtn img{
+  width: 50%;
+  cursor: pointer;
+}
+
+ul{
+  padding-left: 5px;
+  list-style: none;
+}
+
+p{
+  margin: 0;
+}
+
+.panel img{
+  max-width: 100%;
+  max-height: 100%;
+}
