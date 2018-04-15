@@ -1,0 +1,108 @@
+body{
+  background-image: url("assets/step1.png");
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;
+  background-size: cover;
+  margin: 0;
+}
+
+.name{
+  font-family: Avenir Next Condensed;
+  letter-spacing: 10px;
+  margin: 0px;
+  font-size: 4em;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+
+.map-container{
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 1vh;
+  margin: 0 auto;
+  width: 90%;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+circle.st1{
+  fill: grey;
+}
+
+.video-popup{
+  /* display: none; */
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 90%;
+  height: 520px;
+  top: 87px;
+  left: 5%;
+  border-radius: 4px;
+  font-size: 25px;
+}
+
+.video{
+  padding-top: 22px;
+  width: 720px;
+  height: 486px;
+  margin: 0 auto;
+}
+
+.close, .reminder-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+.close:hover, .reminder-close:hover{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+}
+
+.top-section{
+  height: 100vh;
+}
+
+.details-section{
+  color: white;
+  font-family: Avenir Next Condensed;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding-top: 20px;
+}
+
+.details-header{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.details-body{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.reminder-popup{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 47%;
+  left: 43%;
+  height: 100px;
+  width: 240px;
+  border-radius: 4px;
+}
+
+.reminder-content{
+  position: absolute;
+  top: 46%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: Avenir Next Condensed;
+}
