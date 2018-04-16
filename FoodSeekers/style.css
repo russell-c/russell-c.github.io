@@ -1,5 +1,5 @@
 body{
-  background-image: url("assets/step1.png");
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)), url("assets/step1.png");
   -webkit-background-size:cover;
   -moz-background-size: cover;
   -o-background-size:cover;
@@ -13,8 +13,8 @@ body{
   margin: 0px;
   font-size: 4em;
   text-align: center;
-  color: black;
-  font-weight: 600;
+  color: white;
+  font-weight: 300;
 }
 
 
@@ -105,4 +105,25 @@ circle.st1{
   text-align: center;
   color: white;
   font-family: Avenir Next Condensed;
+}
+
+.location-popup{
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: Avenir Next Condensed;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.location-name{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.location-type{
+  font-size: 14px;
+  font-weight: 300;
 }
