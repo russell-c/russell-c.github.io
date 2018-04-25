@@ -6,20 +6,62 @@
   </head>
 
   <body>
+    <div class="menu">
+      <a href="about.html">About</a>
+    </div>
     <div class="main-container">
+      <div class="title">
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="site-name">
+          Communications Lab
+        </div>
+        <div class="filler"></div>
+      </div>
       <div class="header">
-        <h1>My Projects</h1>
+        <div class="header-link" id="hgBox" href="#hungerGames">Movie</div>
+        <div class="header-link" id="slBox" href="#storyLine">Sound</div>
+        <div class="header-link" id="tltBox" href="#theLittleThings">Comic</div>
+        <div class="header-link" id="fsBox" href="#foodSeekers">Video</div>
       </div>
       <div class="content">
-        <ul>
-          <li><a href="hungerGames/index.html">Hunger Games (Movie)</a></li>
-          <li><a href="storyLine/splash.html">StoryLine (Sound)</a></li>
-          <li><a href="theLittleThings/welcome.html">The Little Things (Comic)</a></li>
-          <li><a href="FoodSeekers/index.html">Food Seekers (Video)</a></li>
-        </ul>
+        <div id="hungerGames" class="project">
+          <div class="project-title">
+            Hunger Games
+          </div>
+          <div class="project-desc">
+            A website housing my film entry for the 30 Minute Film Festival, the Best In Show winner, Hunger Games.<br>Jump inside to watch!
+          </div>
+        </div>
+        <div id="storyLine" class="project">
+          <div class="project-title">
+            StoryLine
+          </div>
+          <div class="project-desc">
+            A journey around the NYUAD campus led by the voices of the students.<br>Join us as we simultaneously weave our way around campus and through a tale of great tragedy!
+          </div>
+        </div>
+        <div id="theLittleThings" class="project">
+          <div class="project-title">
+            The Little Things
+          </div>
+          <div class="project-desc">
+            Sometimes life is hard, but sometimes it's all about perspective.<br>Look on the bright side with us, read our comic today!
+          </div>
+        </div>
+        <div id="foodSeekers" class="project">
+          <div class="project-title">
+            Food Seekers
+          </div>
+          <div class="project-desc">
+            In the mood for a cheap bite but don't know where to go? We got you covered!<br>Check out our How To guide to get serious bang for your buck!
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>

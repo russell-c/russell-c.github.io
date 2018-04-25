@@ -1,32 +1,133 @@
 html, body{
   font-family: Futura;
-}
-
-.main-container{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.header{
-  text-align: center;
+  margin: 0;
+  background-color: black;
 }
 
 h1{
   font-style: italic;
 }
 
-ul{
-  font-size: 18px;
-  list-style-type: square;
-}
-
-li a:link, li a:visited{
-  color: teal;
+a:visited, a:link{
+  color: white;
   text-decoration: none;
 }
 
-li a:hover{
-  color: #FFDAB9;
-  text-decoration: none;
-  text-decoration-color: #FFDAB9;
+.main-container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title{
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 85px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 32px
+}
+
+.filler, .menu-btn{
+  flex-basis: 12.5%;
+  text-align: center;
+}
+
+.site-name{
+  flex-basis: 75%;
+  text-align: center;
+}
+
+.header{
+  position: absolute;
+  top: 85px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.header-link{
+  flex-basis: 25%;
+  height: 85px;
+  line-height: 85px;
+  cursor: pointer;
+}
+
+.menu{
+  display: none;
+  position: absolute;
+  top: 85px;
+  width: 150px;
+  height: 70px;
+  line-height: 70px;
+  background-color: black;
+  text-align: center;
+  z-index: 2;
+}
+
+#hgBox{
+  background-color: rgb(250, 75, 20);
+}
+
+#slBox{
+  background-color: rgb(255, 0, 90);
+}
+
+#tltBox{
+  background-color: rgb(81, 37, 129);
+}
+
+#fsBox{
+  background-color: rgb(156, 226, 235);
+}
+
+.content{
+  padding-top: 170px;
+  width: 100%;
+}
+
+.project{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+#hungerGames{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("assets/hgbg.jpg");
+  background-size: cover;
+}
+
+#storyLine{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("assets/slbg.jpg");
+  background-size: cover;
+}
+
+#theLittleThings{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("assets/tltbg.jpg");
+  background-size: cover;
+}
+
+#foodSeekers{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("assets/fsbg.jpg");
+  background-size: cover;
+}
+
+.project-title{
+  height: 40px;
 }
