@@ -1,0 +1,80 @@
+body{
+  background-image: url("assets/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'PT Mono', monospace;
+  margin: 0;
+}
+
+.header{
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  font-size: 22px;
+  text-align: center;
+  color: pink
+}
+
+.stopmotion{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.frame{
+  width: 97%
+}
+
+.words{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.video{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -150px;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.startover{
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 45px;
+  font-size: 15px;
+  text-align: center;
+  color: pink;
+}
+
+.instructions{
+  display: none;
+  position: absolute;
+  bottom: 30%;
+  left: 250px;
+  font-size: 13px;
+  color: #67ab9e;
+}
+
+#frame1, #frame2, #frame3, #frame4, #frame5{
+  display: none;
+}

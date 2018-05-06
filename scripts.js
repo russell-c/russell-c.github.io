@@ -41,6 +41,10 @@ $("#foodSeekers").click(function() {
   window.location.href = "FoodSeekers/index.html"
 });
 
+$("#memories").click(function() {
+  window.location.href = "memories/index.html"
+});
+
 $("#hungerGames").hover(function() {
   $("#hungerGames").css({
     "background": 'linear-gradient(rgba(250, 75, 20, 0.8), rgba(250, 75, 20, 0.8)), url("assets/hgbg.jpg")',
@@ -85,6 +89,18 @@ $("#foodSeekers").hover(function() {
 }, function() {
   $("#foodSeekers").css({
     "background": 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/fsbg.jpg")',
+    "background-size": 'cover'
+  })
+});
+
+$("#memories").hover(function() {
+  $("#memories").css({
+    "background": 'linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url("assets/mbg.jpg")',
+    "background-size": 'cover'
+  })
+}, function() {
+  $("#memories").css({
+    "background": 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/mbg.jpg")',
     "background-size": 'cover'
   })
 });
