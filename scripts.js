@@ -95,7 +95,7 @@ $("#foodSeekers").hover(function() {
 
 $("#memories").hover(function() {
   $("#memories").css({
-    "background": 'linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url("assets/mbg.jpg")',
+    "background": 'linear-gradient(rgba(103, 171, 158, 0.8), rgba(103, 171, 158, 0.8)), url("assets/mbg.jpg")',
     "background-size": 'cover'
   })
 }, function() {
@@ -106,7 +106,7 @@ $("#memories").hover(function() {
 });
 
 $(".header-link").click(function() {
-  var offset = -85;
+  var offset = -65;
   var section = $(this).attr("href");
   $('html, body').animate({
         scrollTop: $(section).offset().top + offset
