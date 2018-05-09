@@ -111,8 +111,24 @@ $(".header-link").click(function() {
   $('html, body').animate({
         scrollTop: $(section).offset().top + offset
   }, 1000);
-})
+});
+
+var angles = [0, 90];
+var currAngle = 0;
 
 $(".menu-btn").click(function(){
+  currAngle = (currAngle+1)%2;
+  $(".menu-btn").css("transform", "rotate("+angles[currAngle]+"deg)");
   $(".menu").slideToggle("fast");
+})
+
+$(".menu p").click(function() {
+  $(".menu").slideToggle("fast");
+  $(".overlay").fadeIn();
+  $(".about-panel").fadeIn();
+})
+
+$(".close, .overlay").click(function() {
+  $(".overlay").fadeOut();
+  $(".about-panel").fadeOut();
 })
