@@ -123,6 +123,8 @@ $(".menu-btn").click(function(){
 })
 
 $(".menu p").click(function() {
+  currAngle = (currAngle+1)%2;
+  $(".menu-btn").css("transform", "rotate("+angles[currAngle]+"deg)");
   $(".menu").slideToggle("fast");
   $(".overlay").fadeIn();
   $(".about-panel").fadeIn();
