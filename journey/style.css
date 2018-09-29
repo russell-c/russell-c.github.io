@@ -1,0 +1,254 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Mountains of Christmas', cursive;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.home-container{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)), url("lilies.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.home-button-container{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-button-container a, .content-header a{
+  font-style: normal;
+  text-decoration: none;
+  color: pink;
+  font-size: 48px;
+}
+
+.home-title{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5%;
+  text-align: center;
+  color: white;
+  font-size: 72px;
+}
+
+.home-subtitle{
+  font-size: 30px;
+}
+
+.home-textbox{
+  position: absolute;
+  bottom: 5%;
+  margin: auto auto;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.content-container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+}
+
+.content-header{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 9vh;
+  z-index: 5;
+  justify-content: space-around;
+  background: linear-gradient(rgba(237, 84, 150, 1), rgba(237, 84, 150, 0.9));
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.content-header a{
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.content-box{
+  width: 100%;
+  min-height: 88vh;
+  padding-top: 12vh;
+}
+
+#gallery{
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  grid-gap: 2%;
+  background-color: black;
+  padding-left: 1vw;
+}
+
+.image-box{
+  position: relative;
+}
+
+.image-box img{
+  display: block;
+  width: 100%;
+  height: 10vw;
+  object-fit: cover;
+  background-color: #8AEBE7;
+  border-radius: 4px;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.image-viewer{
+  display: none;
+  position: relative;
+  left: 5%;
+  bottom: 88%;
+  color: white;
+  background-color: rgba(0,0,0,0.75);
+  width: 90%;
+  height: 88%;
+  z-index: 3;
+  border-radius: 5px;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+#closeImgBtn{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.image-viewer img{
+  display: block;
+  max-width: 60%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.text-box{
+  position: absolute;
+  font-family: 'Arima Madurai', cursive;
+  top: 50px;
+  right: 8px;
+  width: 200px;
+  height: 150px;
+}
+
+.overlay{
+  display: none;
+  position: absolute;
+  z-index: 3;
+  font-family: 'Arima Madurai', cursive;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  height: 10vw;
+  width: 100%;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.overlay p{
+  padding-top: 15%;
+  font-size: 32px;
+}
+
+#tl{
+  display: none;
+  background-color: black;
+  color: white;
+}
+
+#tlList{
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.list-heading{
+  text-align: center;
+  font-size: 30px;
+  color: #8AEBE7;
+  margin-bottom: 50px;
+  font-family: 'Mountains of Christmas', cursive;
+  font-weight: bold;
+}
+
+.list-heading ul li{
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  font-size: 14px;
+  font-family: 'Arima Madurai', cursive;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+#letter{
+  display: none;
+  background-color: black;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+.letter-textbox{
+  width: 70%;
+  color: white;
+  margin: 0 auto;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 20px;
+}
