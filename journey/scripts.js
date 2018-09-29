@@ -29,6 +29,7 @@ $(document).ready(function(){
           scrollTop: $(section).offset().top
     }, 700, function() {
       $(".home-container").hide(0);
+      $("body").css("overflow-y", "visible");
       $(".content-header").animate({
         opacity: "1"
       })
